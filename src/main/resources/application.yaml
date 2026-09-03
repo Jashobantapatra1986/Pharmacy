@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: pharmacy-ms
+  web flux:
+    base-path: /pharmacy-ms
+  flyway:
+    enabled: true
+    url: jdbc:mysql://localhost:3306/pharmacy?createDatabaseIfNotExist=true
+    user: jasho
+    password: password
+
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/pharmacy
+    username: jasho
+    password: password
+
+server:
+  port: 8126
